@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Useful meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Главная</title>
+    
+</head>
+<body>
+    <header class="header">
+      <div class="container">
+        <!-- HeaderMenu Start -->
+        <div class="headerWrapper">
+          <a class="headerLogo" href="#">
+            HomeBuddy<span class="headerLogo__dot">.</span>
+            <p class="headerLogo__info">for homeowners</p>
+          </a>
+          <a class="headerForm__link" href="#advantageOld">
+            Link to form
+          </a>
+        </div>
+        <!-- HeaderMenu End -->
+        <!-- Header Start -->
+        <div class="headerWrapper">
+          <div class="headerInfo">
+            <h1 class="headerInfo__title">
+              How <span class="headerInfo__titleAccent">Over 410,000</span>  <span class="headerInfo__title_accent">Americans</span> Increased Their Property Value <span class="headerInfo__title_accent">In Under</span> <span class="headerInfo__title_accent">6 Hours*</span> With This Simple Upgrade.
+            </h1>
+            <p class="headerInfo__text">
+              Ideal for detached and semi-detached homes with sloped roofs.
+            </p>
+          </div>
+          <div class="headerAside">
+            <img class="headerAside__img" src="img/HeaderOwn.jpg" alt="picture">
+            <a class="headerAside__company" href="https://google.com" target="_blank">
+              As seen on
+              <img class="headerAside__companyImg" src="img/logoCompany.svg" alt="company">
+            </a>
+          </div>
+        </div>
+        <!-- Header End -->
+      </div>
+    </header>
+    
+    <section id="advantageOld" class="advantage">
+      <div class="container">
+        <!-- advantage carts Start -->
+        <ul class="advantage__list">
+          <li class="advantage__listItem">
+            <img class="advantage__listImg" src="img/advantageIcoCheck.svg" alt="advantage">
+            <p class="advantage__listText">
+              Lifetime warranty with 100% no-clog guarantee
+            </p>
+          </li>
+          <li class="advantage__listItem">
+            <img class="advantage__listImg" src="img/advantageIcoHomes.svg" alt="advantage">
+            <p class="advantage__listText">
+              Fits most homes
+            </p>
+          </li>
+          <li class="advantage__listItem">
+            <img class="advantage__listImg" src="img/advantageIcoSaving.svg" alt="advantage">
+            <p class="advantage__listText">
+              Installs over existing gutters saving you thousands
+            </p>
+          </li>
+          <li class="advantage__listItem">
+            <img class="advantage__listImg" src="img/advantageIcoStar.svg" alt="advantage">
+            <img class="advantage__listImgRate" src="img/advantageIcoRate.svg" alt="advantage">
+            <p class="advantage__listText">
+              Сustomer rating
+            </p>
+          </li>
+        </ul>
+        <!-- advantage carts End -->
+      </div>
+      <div class="container containerFalse">
+        <!-- advantage Quiz Start -->
+        <div class="advantageQuiz">
+          <div class="advantageQuiz__bg">
+            <div class="advantageQuiz__alert">
+              <img class="advantageQuiz__alertIco" src="img/advantageQuiz__ico.svg" alt="picture">
+              <p class="advantageQuiz__alertText">
+                You will be surprised how affordable gutter guards are!
+              </p>
+            </div>
+            <h2 class="advantageQuiz__title">
+              See How Much Gutter Guards Cost In The XX, XXX Area
+            </h2>
+            <div class="advantageQuiz__start">
+              <!-- advantage Quiz Form Start -->
+              <form class="advantageQuiz__startForm">
+                <h3 class="advantageQuiz__startFormTitle">
+                  What is your ZIP Code?
+                </h3>
+                <input class="advantageQuiz__startFormInput" placeholder="Enter ZIP Code" type="text">
+                <p class="advantageQuiz__startFormText">
+                  Free, no-obligation estimates.
+                </p>
+                <!-- btnGlobalDisabled - add class true disable style -->
+                <button id="myprogressBar__reset" class="advantageQuiz__startFormBtn btnGlobalSettings" data-modal="modal-one">Get estimate</button>
+                <!-- MODAL -->
+                <div class="advantageQuiz__modal modal" id="modal-one">
+                  <!-- Progress Bar -->
+                  <div id="progress__status">
+                    <div id="progress__status_myprogressBar"></div>
+                  </div>
+                  <!-- Progress Bar -->
+                  <!-- Radio Choice -->
+                  <div class="advantageQuiz__box">
+                    <div class="advantageQuiz__content">
+                      <h2 class="advantageQuiz__contentTitle">
+                        Are you homeowner or authrized to make property changes?
+                      </h2>
+                      <div class="advantageQuiz__radioWrapper">
+                        <div class="advantageQuiz__radioWrap">
+                            <input class="advantageQuiz__radioInput" name="internalOwner" type="radio" value="Yes" id="82e723c9-d895-42ce-9b42-9d9ea67f2cd3"/>
+                            <label class="advantageQuiz__radioLabel" for="82e723c9-d895-42ce-9b42-9d9ea67f2cd3">
+                            <img class="advantageQuiz__radioIco" src="img/quiz__popup_yes.svg" alt="" />
+                            <div class="advantageQuiz__radioText">
+                              Yes
+                            </div>
+                          </label>
+                        </div>
+                        <div class="advantageQuiz__radioWrap">
+                            <input class="advantageQuiz__radioInput" name="internalOwner" type="radio" value="No" id="49f7f5a0-1dfc-4a85-b1ab-be0482a964bc"/>
+                            <label class="advantageQuiz__radioLabel" for="49f7f5a0-1dfc-4a85-b1ab-be0482a964bc">
+                            <img class="advantageQuiz__radioIco" src="img/quiz__popup_no.svg" alt=""/>
+                            <div class="advantageQuiz__radioText">
+                              No
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- 1 -->
+                    <button class="advantageQuiz__btnStep advantageQuiz__btn_disable btnGlobalSettings" onclick="update(), displayRadioValue()" href="#" data-modal="modalTwo">Next</button>
+                  </div>
+                  <button class="modalClose modalExit">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 13.2L16.05 17.25L17.25 16.05L13.2 12L17.25 7.95L16.05 6.75L12 10.8L7.95 6.75L6.75 7.95L10.8 12L6.75 16.05L7.95 17.25L12 13.2Z" fill="#7A7A7A"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 12C1.5 6.15 6.15 1.5 12 1.5C17.85 1.5 22.5 6.15 22.5 12C22.5 17.85 17.85 22.5 12 22.5C6.15 22.5 1.5 17.85 1.5 12ZM3 12C3 16.95 7.05 21 12 21C16.95 21 21 16.95 21 12C21 7.05 16.95 3 12 3C7.05 3 3 7.05 3 12Z" fill="#7A7A7A"/>
+                    </svg>
+                  </button>
+                  <!-- Radio Choice -->
+                  <!-- MODAL-2 -->
+                  <div id="modalTwo" class="modal Progress_Status">
+                    <div class="advantageQuiz__box">
+                      <h2 class="advantageQuiz__contentTitle title_content__advantageQuiz">
+                        Who should I prepare this estimate for?
+                      </h2>
+                      <p class="advantageQuiz__text">
+                        Your choice: <span id="advantageQuiz__result" class="advantageQuiz__result">Yes</span>
+                      </p>
+                      <div class="advantageQuiz__contentBox">
+                        <input class="advantageQuiz__startFormInput_name advantageQuiz__startFormInput" placeholder="Full name" type="text">
+                        <input class="advantageQuiz__startFormInput_adress advantageQuiz__startFormInput" placeholder="Email address" type="text">
+                        <button class="advantageQuiz__btnStep btnGlobalSettings modalExit" onclick="">Next</button>
+                      <div class="advantageQuiz__contentBox">
+                      <a class="advantageQuiz__secure" href="#">
+                        Safe, Secure and Confidential
+                      </a>
+                      <button class="modalClose modalExit">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12 13.2L16.05 17.25L17.25 16.05L13.2 12L17.25 7.95L16.05 6.75L12 10.8L7.95 6.75L6.75 7.95L10.8 12L6.75 16.05L7.95 17.25L12 13.2Z" fill="#7A7A7A"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 12C1.5 6.15 6.15 1.5 12 1.5C17.85 1.5 22.5 6.15 22.5 12C22.5 17.85 17.85 22.5 12 22.5C6.15 22.5 1.5 17.85 1.5 12ZM3 12C3 16.95 7.05 21 12 21C16.95 21 21 16.95 21 12C21 7.05 16.95 3 12 3C7.05 3 3 7.05 3 12Z" fill="#7A7A7A"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <!-- MODAL-2 -->
+                </div>
+                <!-- MODAL -->
+              </form>
+              <!-- advantage Quiz Form End -->
+            </div>
+          </div>
+        </div>
+        <!-- advantage Quiz End -->
+      </div>
+    </section>
+    
+    <footer class="footer">
+      <div class="container">
+        <!-- Footer Logo Start -->
+        <a class="footerLogo headerLogo" href="#">
+          HomeBuddy<span class="headerLogo__dot">.</span>
+        </a>
+        <!-- Footer Logo End -->
+        <!-- Footer Menu Start -->
+        <nav class="menu">
+          <ul class="menuItem">
+            <li class="menuItemList">
+              <a class="menuItemList__link" target="_blank" href="#">Terms of Use</a>
+            </li>
+            <li class="menuItemList">
+              <a class="menuItemList__link" target="_blank" href="#">Privacy Policy</a>
+            </li>
+            <li class="menuItemList">
+              <a class="menuItemList__link" target="_blank" href="#">Cookie Policy</a>
+            </li>
+            <li class="menuItemList">
+              <a class="menuItemList__link" target="_blank" href="#">Do Not Sell My Personal Information</a>
+            </li>
+            <li class="menuItemList">
+              <a class="menuItemList__link" target="_blank" href="#">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+         <!-- Footer Menu End -->
+      </div>
+    </footer>
+    
+    <script src="js/main.min.js"></script>
+</body>
+</html>

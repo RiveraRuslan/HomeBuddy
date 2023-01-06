@@ -1,0 +1,533 @@
+@import 'libs';
+@import 'vars';
+@import 'global';
+@import 'fonts';
+// Header Start
+.header{
+  background-color: $blue;
+  padding: 16px 0 101px;
+  @media(max-width: 580px) {
+    padding: 16px 0 52px;
+  }
+}
+.headerWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// HeaderMenu Start
+.headerLogo {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  @media(max-width: 580px) {
+    font-size: 24.17px;
+    line-height: 29px;
+  }
+}
+.headerLogo__dot{
+  color: $orange;
+}
+.headerLogo__info {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  @media(max-width: 1020px) {
+    font-size: 9px;
+  }
+}
+.headerForm__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+// HeaderMenu End
+
+// HeaderConten Start
+.headerWrapper:nth-child(2){
+  padding-top: 58px;
+  @media(max-width: 1020px) {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  @media(max-width: 580px) {
+    padding-top: 24px;
+  }
+}
+.headerInfo {
+  max-width: 566px;
+  @media(max-width: 1020px) {
+    max-width: 630px;
+  }
+}
+.headerInfo__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 48px;
+  margin-bottom: 32px;
+  position: relative;
+  z-index: 0;
+  @media(max-width: 1200px) {
+    font-size: 28px;
+    line-height: 38px;
+    margin-bottom: 16px;
+    max-width: 470px;
+  }
+  @media(max-width: 580px) {
+    font-size: 23px;
+    line-height: 32px;
+  }
+  @media(max-width: 330px) {
+    font-size: 21px;
+    line-height: 28px;
+  }
+}
+.headerInfo__titleAccent {
+  width: 100%;
+  // height: 35px;
+  background-color: $green;
+  border-radius: 4px;
+  position: relative;
+  white-space: nowrap;
+  &:nth-child(2)::after,
+  &:nth-child(4)::after{
+    position: absolute;
+    z-index: -1;
+    content: "";
+    background-color: $green;
+    height: 100%;
+    width: 20px;
+    left: -13px;
+    top: 0px;
+    @media(max-width: 580px) {
+      background-color: transparent;
+    }
+  }
+}
+.headerInfo__text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 32px;
+  @media(max-width: 1200px) {
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 24px;
+    max-width: 470px;
+  }
+  @media(max-width: 580px) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+.headerAside {
+  position: relative;
+}
+.headerAside__img {
+  max-width: 580px;
+  border-radius: 18px;
+  margin-left: 24px;
+  @media(max-width: 1200px) {
+    max-width: 540px;
+  }
+  @media(max-width: 1020px) {
+    margin-left: 0px;
+    max-width: 100%;
+  }
+  @media(max-width: 580px) {
+    border-radius: 8px;
+  }
+}
+.headerAside__company {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 16px;
+  background-color: $white;
+  color: $black;
+  border-radius: 8px;
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  padding: 8px 16px;
+  @media(max-width: 580px) {
+    padding: 8px;
+  }
+}
+.headerAside__companyImg{
+  padding-left: 4px;
+  @media(max-width: 580px) {
+    max-width: 23.75px;
+  }
+}
+// HeaderConten End
+// Header End
+
+// Advantage Start
+  .advantage{
+    padding: 48px 0 48px;
+  }
+  // AdvantageCarts Start
+  .advantage__list {
+    display: grid;
+    grid-template-columns: repeat(4, 264px);
+    grid-column-gap: 30px;
+    margin-bottom: 48px;
+    justify-content: center;
+    @media(max-width: 1200px) {
+      grid-template-columns: repeat(2, 264px);
+      grid-row-gap: 30px;
+      justify-content: center;
+    }
+    @media(max-width: 580px) {
+      grid-template-columns: repeat(1, 1fr);
+      grid-column-gap: 24px;
+      grid-row-gap: 24px;
+      margin-bottom: 132px;
+    }
+  }
+  .advantage__listItem {
+    @media(max-width: 580px) {
+      display: flex;
+      align-items: center;
+    }
+  }
+  .advantage__listImg {
+    margin: 0 auto;
+    padding-bottom: 16px;
+    @media(max-width: 580px) {
+      margin: 0;
+      padding-bottom: 0px;
+      padding-right: 16px;
+      max-width: 64px;
+    }
+  }
+  .advantage__listText {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: $black;
+    max-width: 260px;
+    text-align: center;
+    @media(max-width: 580px) {
+      text-align: start;
+    }
+    @media(max-width: 330px) {
+      text-align: start;
+       font-size: 15px;
+    }
+  }
+  .advantage__listImgRate {
+    margin: 0 auto;
+    padding-bottom: 6px;
+    @media(max-width: 580px) {
+      padding-bottom: 0px;
+      margin: 0px 4px 0px 0px;
+    }
+  }
+  // AdvantageCarts End
+  //advantage Quiz Start
+  .advantageQuiz{
+    background-color: $blue;
+    border-radius: 24px;
+  }
+  .advantageQuiz__bg{
+    background-image: url(../img/advantageQuiz__bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+    padding: 64px 96px 96px 96px;
+    position: relative;
+    @media(max-width: 750px) {
+      padding: 50px;
+    }
+    @media(max-width: 580px) {
+      padding: 24px 24px 48px 24px;
+      background-image: none;
+    }
+  }
+  .advantageQuiz__alert {
+    display: flex;
+    align-items: flex-start;
+    margin: 0 auto;
+    background-color: $white;
+    max-width: 496px;
+    border-radius: 8px;
+    padding: 10px;
+    @media(max-width: 580px) {
+      position: absolute;
+      top: -24px;
+      background-color: #f5f6fe;
+      transform: translateY(-100%);
+      border: 1px solid #fa8c16;
+      left: 0;
+      width: 92%;
+      max-width: 100%;
+      margin: 0px 15px 0 15px;
+    }
+  }
+  .advantageQuiz__alertIco {
+    margin-right: 10px;
+  }
+  .advantageQuiz__alertText {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: $black;
+    text-align: left;
+  }
+  .advantageQuiz__title{
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 36px;
+    text-align: center;
+    margin: 16px 0 32px;
+    @media(max-width: 580px) {
+      margin: 0px 0px 16px 0px;
+      text-align: start;
+    }
+  }
+  .advantageQuiz__start {
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16px;
+    padding: 48px 16px;
+    max-width: 978px;
+  }
+  .advantageQuiz__startForm {
+    max-width: 320px;
+    @media(max-width: 580px) {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  .advantageQuiz__startFormTitle {
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 32px;
+    color: $black;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .advantageQuiz__startFormInput {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: $black;
+    margin-bottom: 8px;
+    padding: 16px 19.5px;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    background-color: $grey;
+  }
+  .advantageQuiz__startFormText {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: $black;
+    margin-bottom: 16px;
+    color: $greyDark;
+  }
+  .advantageQuiz__startFormBtn{
+    padding: 16px 106.5px;
+    width: 100%;
+    @media(max-width: 580px) {
+      padding: 16px 16px;
+    }
+  }
+  //advantage Quiz End
+// Advantage End
+// Footer Start
+.footer {
+  background-color: $blue;
+  padding: 24px 0px 61px 0px;
+  @media(max-width: 710px) {
+    padding: 24px 0px 48px 0px;
+  }
+}
+.footerLogo{
+  text-align: center;
+  display: block;
+  margin-bottom: 20px;
+  @media(max-width: 710px) {
+    text-align: start;
+    margin-bottom: 24px;
+  }
+}
+  // Menu Start
+  .menuItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media(max-width: 710px) {
+     flex-direction: column;
+     justify-content: start;
+     align-items: flex-start;
+    }
+  }
+  .menuItemList + .menuItemList {
+    padding-left: 32px;
+  }
+  @media(max-width: 710px) {
+    .menuItemList + .menuItemList {
+      padding-left: 0px;
+      padding-top: 16px;
+    }
+  }
+  .menuItemList__link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    transition: ease .3s;
+    border-bottom: 1px solid transparent;
+    &:hover{
+      border-bottom: 1px solid $white;
+    }
+    @media(max-width: 710px) {
+      font-size: 14px;
+    }
+  }
+  // Menu End
+// Footer End
+
+// Quiz Radio Popup-1 Start
+.advantageQuiz__box{
+  text-align: center;
+  margin: 0 15px;
+}
+.advantageQuiz__contentTitle{
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 36px;
+  color: $black;
+  max-width: 450px;
+  text-align: center;
+  margin-bottom: 24px;
+  @media(max-width: 580px) {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 32px;
+  }
+}
+.title_content__advantageQuiz{
+  margin-bottom: 4px;
+}
+.advantageQuiz__content {
+  margin-bottom: 24px;
+  @media(max-width: 600px) {
+    margin-bottom: 8px;
+  }
+}
+//CheckBox
+.advantageQuiz__radioWrapper{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  @media(max-width: 600px) {
+    flex-direction: column;
+  }
+}
+.advantageQuiz__radioWrap{
+  width: 100%;
+  max-width: 168px;
+  @media(max-width: 600px) {
+    display: contents;
+  }
+}
+.advantageQuiz__radioWrap + .advantageQuiz__radioWrap{
+  margin-left: 16px;
+  @media(max-width: 600px) {
+    margin-left: 0px;
+  }
+}
+.advantageQuiz__radioInput:checked~.advantageQuiz__radioLabel {
+  border-color: #fa8c16;
+}
+.advantageQuiz__radioLabel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #f5f6fe;
+  border-radius: 8px;
+  box-sizing: border-box;
+  cursor: pointer;
+  padding: 20px 24px;
+  width: 100%;
+  transition: ease .3s;
+  &:hover{
+    border-color: #fa8c16;
+  }
+  @media(max-width: 600px) {
+    flex-direction: inherit;
+    margin-bottom: 16px;
+  }
+}
+.advantageQuiz__radioWrap + .advantageQuiz__radioWrap{
+  margin-bottom: 16px;
+}
+.advantageQuiz__radioInput {
+  height: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  visibility: hidden;
+  width: 0;
+}
+.advantageQuiz__radioText{
+  color: $black;
+  margin-top: 16px;
+  @media(max-width: 600px) {
+   margin: 0px 0px 0px 16px;
+  }
+}
+//CheckBox
+.advantageQuiz__btnStep{
+  padding: 16px 24px;
+  display: block;
+  margin: 0 auto;
+  @media(max-width: 580px) {
+    width: 100%;
+  }
+}
+
+.advantageQuiz__btnDisable {
+  opacity: .5;
+  pointer-events: none;
+}
+
+.advantageQuiz__filterStyle[name="group"] {
+  opacity: 0;
+}
+// Quiz Radio Popup-1 End
+
+// Quiz Radio Popup-2 Start
+.advantageQuiz__text{
+  color: $black;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.advantageQuiz__result{
+  font-weight: 700;
+}
+.advantageQuiz__startFormInput_name,
+.advantageQuiz__startFormInput_adress{
+  max-width: 250px;
+  margin-bottom: 16px;
+  @media(max-width: 580px) {
+    max-width: 100%;
+  }
+}
+// Quiz Radio Popup-2 End
